@@ -3,7 +3,7 @@ public class Bike extends Vehicle {
   /**
   * The cadence of the bike.
   */
-  private int cadence = 3;
+  private final int cadence = 3;
 
   /**
   * The constructor for the bike.
