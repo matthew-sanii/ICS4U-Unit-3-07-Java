@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 final class Vehicles {
 
   /**
@@ -19,6 +21,8 @@ final class Vehicles {
   string of numbers.
   */
   public static void main(final String[] args) {
+    final Scanner userInput = new Scanner(System.in);
+    System.out.println("Input the color of the vehicle: ");
     Bike bike = new Bike();
     Truck truck = new Truck();
     System.out.println("Bike speed is now " + bike.accelerate());

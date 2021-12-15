@@ -45,8 +45,10 @@ public class Truck extends Vehicle {
   *
   * @param plateNum the new plate number.
   */
-  public void plateInfo(final String plateNum) {
+  public void plateInfo(final String plateNum,
+  final String color) {
     plateNumber = plateNum;
+    this.color = color;
   }
 
   /**
@@ -54,7 +56,8 @@ public class Truck extends Vehicle {
   *
   * @return plateNumber.
   */
-  public String getPlate() {
-    return plateNumber;
+  public String getInfo() {
+    final String info = plateNumber + color;
+    return info;
   }
 }

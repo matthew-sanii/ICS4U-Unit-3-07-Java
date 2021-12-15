@@ -13,20 +13,27 @@ public class Vehicle {
   /**
   * The max speed of the car.
   */
-  private final int maxSpeed;
+  private final int maxSpeed = 100;
 
   /**
   * The value used for the change in speed during accelerate method.
   */
-  private final int speedChange;
+  private final int speedChange = 5;
 
   /**
   * The no arguments given vehicle constructor.
   */
   public Vehicle() {
-    speedChange = 5;
     color = "red";
-    maxSpeed = 100;
+  }
+
+  /**
+  * The arguments given vehicle constructor.
+  *
+  * @param colour the color of the vehicle.
+  */
+  public Vehicle(final String colour) {
+    color = colour;
   }
 
   /**
