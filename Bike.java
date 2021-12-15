@@ -1,27 +1,58 @@
 public class Bike extends Vehicle {
-  
+
+  /**
+  * The cadence of the bike.
+  */
   private int cadence = 3;
 
+  /**
+  * The constructor for the bike.
+  */
   public Bike() {
     super();
   }
 
+  /**
+  * The accelerate method.
+  *
+  * @return speed.
+  */
   public int accelerate() {
-    return(super.accelerate());
+    return super.accelerate();
   }
 
+  /**
+  * The brake method.
+  *
+  * @return speed.
+  */
   public int brake() {
-    return(super.brake());
+    return super.brake();
   }
 
+  /**
+  * the ringBell method.
+  *
+  * @return Ding!
+  */
   public String ringBell() {
-    return("Ding!");
+    return "Ding!";
   }
 
-  public void setCadence(final int cadance) {
-    cadence = cadance;
+  /**
+  * The setCadence method.
+  *
+  * @param newCadence the new cadence
+  */
+  public void setCadence(final int newCadence) {
+    cadence = newCadence;
   }
 
+  /**
+  * The getCadence method.
+  *
+  * @return cadence.
+  */
   public int getCadence() {
     return cadence;
   }
