@@ -44,6 +44,7 @@ public class Truck extends Vehicle {
   * The plateInfo method.
   *
   * @param plateNum the new plate number.
+  * @param color the color of the truck.
   */
   public void plateInfo(final String plateNum,
   final String color) {
@@ -57,7 +58,7 @@ public class Truck extends Vehicle {
   * @return plateNumber.
   */
   public String getInfo() {
-    final String info = plateNumber + color;
+    final String info = plateNumber + " and is " + color;
     return info;
   }
 }

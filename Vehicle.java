@@ -8,7 +8,7 @@ public class Vehicle {
   /**
   * The empty color string.
   */
-  private final String color;
+  public String color;
 
   /**
   * The max speed of the car.
