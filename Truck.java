@@ -7,6 +7,8 @@ public class Truck extends Vehicle {
 
   /**
   * The truck constructor.
+  *
+  * @param colour the new color of the truck.
   */
   public Truck(final String colour) {
     super();

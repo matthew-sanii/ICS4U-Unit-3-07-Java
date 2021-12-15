@@ -37,12 +37,12 @@ final class Vehicles {
       Bike bike = new Bike();
       Truck truck = new Truck(truckColor);
       System.out.println("Bike speed is now " + bike.accelerate());
-      System.out.println("Truck speed is now " +   truck.accelerate());
+      System.out.println("Truck speed is now " + truck.accelerate());
       System.out.println("The bike's bell goes " + bike.ringBell());
       System.out.println("The truck's horn goes " + truck.provideAir());
       truck.plateInfo(truckPlate);
       System.out.println("The truck's plate number of "
-      + truck.getInfo()+ " in color");
+      + truck.getInfo() + " in color");
       System.out.println("Input cadence of bike: ");
       try {
         final String bikeCadence = userInput.nextLine();
