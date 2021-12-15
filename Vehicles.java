@@ -35,13 +35,14 @@ final class Vehicles {
       final int checker = Integer.valueOf(truckColor);
     } catch (NumberFormatException errorCode) {
       Bike bike = new Bike();
-      Truck truck = new Truck(truckColor);
+      Truck truck = new Truck();
       System.out.println("Bike speed is now " + bike.accelerate());
       System.out.println("Truck speed is now " + truck.accelerate());
       System.out.println("The bike's bell goes " + bike.ringBell());
       System.out.println("The truck's horn goes " + truck.provideAir());
       truck.plateInfo(truckPlate);
-      System.out.println("The truck's plate number of "
+      truck.setColor(truckColor);
+      System.out.println("The truck's plate number is "
       + truck.getInfo() + " in color");
       System.out.println("Input cadence of bike: ");
       try {

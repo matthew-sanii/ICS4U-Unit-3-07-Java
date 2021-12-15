@@ -6,11 +6,16 @@ public class Truck extends Vehicle {
   private String plateNumber;
 
   /**
+  * The truck color.
+  */
+  private String truckColor = "green";
+
+  /**
   * The truck constructor.
   *
   * @param colour the new color of the truck.
   */
-  public Truck(final String colour) {
+  public Truck() {
     super();
   }
 
@@ -57,7 +62,17 @@ public class Truck extends Vehicle {
   * @return plateNumber.
   */
   public String getInfo() {
-    final String info = plateNumber + " and is " + color;
+    final String info = plateNumber + " and is " + truckColor;
     return info;
+  }
+
+  /**
+  * The setColor method.
+  *
+  * @param newColor the new truck color.
+  */
+  public void setColor(final String newColor) {
+    truckColor = "";
+    truckColor = newColor;
   }
 }
