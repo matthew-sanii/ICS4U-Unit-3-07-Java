@@ -56,5 +56,6 @@ final class Vehicles {
       System.out.println("\nDone");
       System.exit(0);
     }
+    System.out.println("Truck color must be a string.");
   }
 }
