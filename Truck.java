@@ -8,7 +8,7 @@ public class Truck extends Vehicle {
   /**
   * The truck constructor.
   */
-  public Truck() {
+  public Truck(final String colour) {
     super();
   }
 
@@ -44,12 +44,9 @@ public class Truck extends Vehicle {
   * The plateInfo method.
   *
   * @param plateNum the new plate number.
-  * @param color the color of the truck.
   */
-  public void plateInfo(final String plateNum,
-  final String color) {
+  public void plateInfo(final String plateNum) {
     plateNumber = plateNum;
-    this.color = color;
   }
 
   /**

@@ -26,8 +26,8 @@ final class Vehicles {
     final String truckColor = userInput.nextLine();
     System.out.println("Input the truck plate info: ");
     final String truckPlate = userInput.nextLine();
-    if (truckColor.length() == 0 ||
-    truckPlate.length() == 0) {
+    if (truckColor.length() == 0
+    || truckPlate.length() == 0) {
       System.out.println("Can't input empty string.");
       System.exit(0);
     }
@@ -35,13 +35,14 @@ final class Vehicles {
       final int checker = Integer.valueOf(truckColor);
     } catch (NumberFormatException errorCode) {
       Bike bike = new Bike();
-      Truck truck = new Truck();
+      Truck truck = new Truck(truckColor);
       System.out.println("Bike speed is now " + bike.accelerate());
       System.out.println("Truck speed is now " +   truck.accelerate());
       System.out.println("The bike's bell goes " + bike.ringBell());
       System.out.println("The truck's horn goes " + truck.provideAir());
-      truck.plateInfo(truckPlate, truckColor);
-      System.out.println("The truck's plate number of " + truck.getInfo()+ " in color");
+      truck.plateInfo(truckPlate);
+      System.out.println("The truck's plate number of "
+      + truck.getInfo()+ " in color");
       System.out.println("Input cadence of bike: ");
       try {
         final String bikeCadence = userInput.nextLine();
